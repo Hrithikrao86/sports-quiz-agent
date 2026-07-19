@@ -1,0 +1,26 @@
+[
+  {
+    "sport": "Cricket",
+    "fact": "The first official Test match was played in 1877 between Australia and England."
+  },
+  {
+    "sport": "Cricket",
+    "fact": "India won the 1983 Cricket World Cup under Kapil Dev."
+  },
+  {
+    "sport": "Football",
+    "fact": "The first FIFA World Cup was held in 1930 in Uruguay."
+  },
+  {
+    "sport": "Football",
+    "fact": "Lionel Messi captained Argentina to the 2022 FIFA World Cup title."
+  },
+  {
+    "sport": "Badminton",
+    "fact": "P. V. Sindhu won the BWF World Championships in 2019."
+  },
+  {
+    "sport": "Badminton",
+    "fact": "The Thomas Cup is the men's world team badminton championship."
+  }
+]
