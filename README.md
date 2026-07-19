@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🏆 AI Sports Quiz Generator
 
 An AI-powered Sports Quiz Generator built with **Streamlit**, **ChromaDB**, **Gemini 2.5 Flash**, and **DuckDuckGo Search**.
@@ -78,17 +78,6 @@ Run the application
 ```bash
 streamlit run app.py
 ```
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-- Home Page
-- Quiz Generation
-- Quiz Results
-
 ---
 
 ## 👨‍💻 Author
@@ -97,4 +86,4 @@ Developed by **Hrithik Rao**
 =======
 # sports-quiz-agent
 AI-powered Sports Quiz Generator built with Streamlit, ChromaDB, Gemini and DuckDuckGo Search.
->>>>>>> 3a85e9c2efa28bb6fc29589586ca52fb15789c96
+
