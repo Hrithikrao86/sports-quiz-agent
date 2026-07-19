@@ -128,14 +128,6 @@ if st.session_state.quiz:
         else:
             st.warning("📚 Keep Practicing!")
 
-        if st.button("🔄 Generate New Quiz"):
-
-            st.session_state.quiz = None
-
-            for key in list(st.session_state.keys()):
-                if key.startswith("question_"):
-                    del st.session_state[key]
-
-            st.rerun()
+        
 
 st.caption("Built with ❤️ using Streamlit, ChromaDB, DuckDuckGo Search and Gemini 2.5 Flash")
