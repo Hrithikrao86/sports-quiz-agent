@@ -128,13 +128,29 @@ if st.session_state.quiz:
         else:
             st.warning("📚 Keep Practicing!")
 
-        if st.button("🔄 Start New Quiz"):
+        if st.button("🔄 Generate New Quiz"):
 
-            st.session_state.quiz = None
+    
+          for key in list(st.session_state.keys()):
+            if key.startswith("question_"):
+              del st.session_state[key]
 
-            for key in list(st.session_state.keys()):
-                if key.startswith("question_"):
-                    del st.session_state[key]
+          with st.spinner("Generating New Quiz..."):
+
+            facts = query_facts(
+              sport=sport,
+              query_text=f"{sport} history",
+              n_results=3
+            )
+
+            news = get_live_news(sport)
+            news_text = "\n\n".join(item["body"] for item in news)
+
+            st.session_state.quiz = generate_quiz(
+                    sport,
+                    difficulty,
+                    "\n".join(facts),
+                    news_text)
 
             st.rerun()
 
