@@ -43,7 +43,11 @@ if st.sidebar.button("🚀 Generate Quiz"):
         )
 
         news = get_live_news(sport)
-        news_text = "\n\n".join(item["body"] for item in news)
+
+        if news:
+            news_text = "\n\n".join(item.get("body", "") for item in news)
+        else:
+            news_text = ""
 
         st.session_state.quiz = generate_quiz(
             sport,
